@@ -4,3 +4,5 @@
   - docker compose up -d
 
 - accès au local : http://localhost
+
+-s dilan
