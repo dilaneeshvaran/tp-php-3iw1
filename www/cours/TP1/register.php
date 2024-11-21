@@ -47,18 +47,7 @@ if(count($_POST) == 5 && !empty($_POST["firstname"])  && !empty($_POST["lastname
 
 <?php include "header.php";?>
 
-<?php
 
-if(!empty($errors)){
-    echo '<div style="background-color: red">';
-    foreach ($errors as $error)
-    {
-        echo '<li>'.$error.'</li>';
-    }
-    echo '</div>';
-}
-
-?>
 
 
 <form method="post">

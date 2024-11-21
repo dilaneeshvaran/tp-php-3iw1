@@ -2,6 +2,7 @@
 
 namespace App\Core;
 
+use App\Models\User;
 class SQL
 {
 
@@ -22,6 +23,24 @@ class SQL
                "id"=>$id
            ]);
        return $queryPrepared->fetch();
+    }
+
+    public function getMany(string $table):array
+    {
+        $queryPrepared = $this->pdo->prepare("SELECT * FROM ".$table);
+        $queryPrepared->execute([]);
+        return $queryPrepared->fetchAll();
+    }
+
+    public function createUser(User $user){
+        $queryPrepared=$this->pdo->prepare("INSERT INTO users (firstname, lastname, email, password, country) VALUES (:firstname, :lastname, :email, :password, :country)");
+        $queryPrepared->execute([
+            "firstname"=>$user->getFirstname(),
+            "lastname"=>$user->getLastname(),
+            "email"=>$user->getEmail(),
+            "pwd"=>$user->getPassword(),
+            "country"=>$user->getCountry()
+        ]);
     }
 
 }

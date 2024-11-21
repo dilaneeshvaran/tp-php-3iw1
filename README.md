@@ -8,10 +8,10 @@
 
 TODO
 -- Conception
-----> Création d'une table SQL user
+----> Création d'une table SQL user-------Ok
 
 -- Inscription
-----> Création d'une vue avec un formulaire
+----> Création d'une vue avec un formulaire------>SHOULD I ADD THE COUNTRIES TO A TABLE THEN FETCH IT IN A SELECT?
 ----> Validation des champs du formulaire avec affichage des erreurs si nécessaire
 ------------> email, pwd, pwdConfirm, firstname, lastname, country
 ------------> Pensez à vérifier l'unicité de l'email
