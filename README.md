@@ -7,17 +7,17 @@
 
 
 TODO
--- Conception
-----> Création d'une table SQL user-------Ok
+OK-- Conception
+OK----> Création d'une table SQL user
 
--- Inscription
-----> Création d'une vue avec un formulaire------>SHOULD I ADD THE COUNTRIES TO A TABLE THEN FETCH IT IN A SELECT?
-----> Validation des champs du formulaire avec affichage des erreurs si nécessaire
-------------> email, pwd, pwdConfirm, firstname, lastname, country
-------------> Pensez à vérifier l'unicité de l'email
-------------> Pensez à utiliser password hash
-----> Insertion en BDD de l'utilisateur
-----> Redirection sur la page de login
+OK-- Inscription
+OK----> Création d'une vue avec un formulaire
+OK----> Validation des champs du formulaire avec affichage des erreurs si nécessaire
+OK------------> email, pwd, pwdConfirm, firstname, lastname, country
+OK------------> Pensez à vérifier l'unicité de l'email
+OK------------> Pensez à utiliser password hash
+OK----> Insertion en BDD de l'utilisateur
+OK----> Redirection sur la page de login
 
 -- Connexion
 ----> Création d'une vue avec un formulaire
@@ -27,4 +27,7 @@ TODO
 
 -- Déconnexion
 ----> Ajouter un lien de déconnexion
-L'utilisation des models est facultatifs
+
+OK-->L'utilisation des models est facultatifs
+
+-->page title dynamique
