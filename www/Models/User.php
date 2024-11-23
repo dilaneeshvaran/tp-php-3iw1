@@ -7,7 +7,7 @@ class User{
     private $lastname;
     private $email;
     private $password;
-    private $country;
+    private $countryid;
     public function getFirstname(){
         return $this->firstname;
     }
@@ -33,13 +33,13 @@ class User{
     }
 
     public function getCountry(){
-        return $this->country;
+        return $this->countryid;
     }
 
-    public function setCountry($country){
-        $this->country=$country;
+    public function setCountry($countryid){
+        $this->countryid=$countryid;
     }
-    public function getPassword(){
+    public function getPassword(): string {
         return $this->password;
     }
     public function setPassword(string $password): void

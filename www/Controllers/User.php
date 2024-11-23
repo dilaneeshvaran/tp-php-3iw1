@@ -22,7 +22,7 @@ class User
 
     public function login(): void
     {
-        echo "Se connecter";
+        $view = new View("User/login.php", "back.php");
     }
     public function logout(): void
     {

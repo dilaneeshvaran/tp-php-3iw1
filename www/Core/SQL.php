@@ -33,13 +33,13 @@ class SQL
     }
 
     public function createUser(User $user){
-        $queryPrepared=$this->pdo->prepare("INSERT INTO users (firstname, lastname, email, password, country) VALUES (:firstname, :lastname, :email, :password, :country)");
+        $queryPrepared=$this->pdo->prepare("INSERT INTO user (firstname, lastname, email, password, countryid) VALUES (:firstname, :lastname, :email, :password, :countryid)");
         $queryPrepared->execute([
             "firstname"=>$user->getFirstname(),
             "lastname"=>$user->getLastname(),
             "email"=>$user->getEmail(),
-            "pwd"=>$user->getPassword(),
-            "country"=>$user->getCountry()
+            "password"=>$user->getPassword(),
+            "countryid"=>$user->getCountry()
         ]);
     }
 
