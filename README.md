@@ -5,8 +5,11 @@
 
 - accès au local : http://localhost
 
+//TESTING ACCOUNT
+email : test@gmail.com
+psswd : Testtest1
 
-TODO
+//TODO
 OK-- Conception
 OK----> Création d'une table SQL user
 
@@ -19,11 +22,11 @@ OK------------> Pensez à utiliser password hash
 OK----> Insertion en BDD de l'utilisateur
 OK----> Redirection sur la page de login
 
--- Connexion
-----> Création d'une vue avec un formulaire
-----> Validation des champs avec vérifications des identifiants
-------------> Pensez à utiliser password verify
-----> Redirection sur la page d'accueil et afficher dessus le prénom si l'user est connecté
+OK-- Connexion
+OK----> Création d'une vue avec un formulaire
+OK----> Validation des champs avec vérifications des identifiants
+OK------------> Pensez à utiliser password verify
+OK----> Redirection sur la page d'accueil et afficher dessus le prénom si l'user est connecté
 
 -- Déconnexion
 ----> Ajouter un lien de déconnexion

@@ -17,3 +17,7 @@
 /page:
   controller: "page"
   action: "show"
+
+/main:
+  controller: "Main"
+  action: "home"

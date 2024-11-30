@@ -4,11 +4,18 @@ namespace App\Controllers;
 use App\Core\View;
 class Main
 {
-    private $_pseudo = "jkd";
+    private $_pseudo;
+    public function __construct() 
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        $this->_pseudo = $_SESSION["firstname"] ?? null;
+    }
     public function home(): void
     {
         $view = new View("User/hello.php", "front.php");
-        echo $view;
+        //echo $view;
     }
     public function getPseudo(): string
     {

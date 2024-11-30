@@ -1,7 +1,7 @@
 <?php
 
-$main = new Main();
-echo $main->getPseudo();
-echo "Hello ".$_pseudo;
+use App\Controllers\Main;
 
+$main = new Main();
+echo "Welcome back ".$main->getPseudo();
 ?>

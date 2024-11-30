@@ -43,4 +43,12 @@ class SQL
         ]);
     }
 
+    public function getUserByEmail($email){
+        $queryPrepared = $this->pdo->prepare("SELECT * FROM user WHERE email = :email");
+        $queryPrepared->execute([
+            "email" => $email
+        ]);
+        return $queryPrepared->fetch();
+    }
+
 }
