@@ -18,7 +18,7 @@ require 'Sqlite.class.php';
         }else{
             $_SESSION["log"] = true;
             $_SESSION["firstname"] = $user["firstname"];
-            header('Location: index.php');
+            header('Location: /accueil');
         }
 
     }
