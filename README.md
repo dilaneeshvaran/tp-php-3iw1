@@ -22,6 +22,8 @@ docker compose up -d
 http://localhost
 ```
 
+5. Importer dans phpmyadmin, le fichier "esgi.sql"
+
 ## Compte test
 ```
 email : test@gmail.com
