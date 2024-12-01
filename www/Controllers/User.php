@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Core\User as U;
@@ -31,10 +32,12 @@ class User
         $view->addData("title", $page["title"]);
         $view->addData("description", $page["description"]);
     }
+
     public function logout(): void
     {
         $user = new U();
         $user->logout();
-        echo "Déconnexion";
+        header("Location: /se-connecter");
+        exit();
     }
 }

@@ -1,21 +1,30 @@
 <?php
+
 namespace App\Core;
+
 class User
 {
+    public function __construct()
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+    }
 
     public function isLogged(): bool
     {
-        return false;
+        return isset($_SESSION['firstname']);
     }
 
-    public function getRoles():array
+    public function getRoles(): array
     {
-        return [];
+        return $_SESSION['roles'] ?? [];
     }
 
-    public function logout():void
+    public function logout(): void
     {
-        session_destroy();
+        if (session_status() === PHP_SESSION_ACTIVE) {
+            session_destroy();
+        }
     }
-
 }
