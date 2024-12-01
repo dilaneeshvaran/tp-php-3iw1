@@ -15,7 +15,7 @@
   action: "dashboard"
 
 /page:
-  controller: "page"
+  controller: "Page"
   action: "show"
 
 /main:

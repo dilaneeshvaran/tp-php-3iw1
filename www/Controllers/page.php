@@ -5,10 +5,11 @@ namespace App\Controllers;
 use App\Core\View;
 use App\Core\SQL;
 
-class page
+class Page
 {
 
-    public function show(){
+    public function show()
+    {
         $pageId = $_GET["id"];
         //Me connecter à la bdd
         $sql = new SQL();
@@ -21,7 +22,5 @@ class page
         $view->addData("title", $result["title"]);
         $view->addData("description", $result["description"]);
         $view->addData("created", $result["date_created"]);
-
     }
-
 }
