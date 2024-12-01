@@ -26,7 +26,6 @@ class House{
             $this->stairs++;
         }
     }
-
 }
 
 echo "<pre>";

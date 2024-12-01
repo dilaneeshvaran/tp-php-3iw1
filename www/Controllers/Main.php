@@ -20,6 +20,7 @@ class Main
     public function home(): void
     {
         $sql = new SQL();
+
         $page = $sql->getOneById("page", 3);
         $view = new View("User/main.php", "front.php");
         $view->addData("title", $page["title"]);

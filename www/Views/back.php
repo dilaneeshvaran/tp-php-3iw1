@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="UTF-8">
     <title><?php echo $title ?? "Titre de ma page"; ?></title>

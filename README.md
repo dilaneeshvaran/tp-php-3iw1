@@ -1,36 +1,58 @@
 # 3IW1-2024
-- Github : https://github.com/skrzypczyk/3IW1-2024
-  - docker compose build
-  - docker compose up -d
 
-- accès au local : http://localhost
+## Installation
 
-- TESTING ACCOUNT
- - email : test@gmail.com
- - psswd : Testtest1
+1. Cloner le repository
+```bash
+git clone https://github.com/skrzypczyk/3IW1-2024
+```
 
-- TODO
- - OK-- Conception
- - OK----> Création d'une table SQL user
+2. Build Docker
+```bash
+docker compose build
+```
 
-- OK-- Inscription
- - OK----> Création d'une vue avec un formulaire
- - OK----> Validation des champs du formulaire avec affichage des erreurs si nécessaire
- - OK------------> email, pwd, pwdConfirm, firstname, lastname, country
- - OK------------> Pensez à vérifier l'unicité de l'email
- - OK------------> Pensez à utiliser password hash
- - OK----> Insertion en BDD de l'utilisateur
- - OK----> Redirection sur la page de login
+3. Lancer les containers
+```bash
+docker compose up -d
+```
 
-- OK-- Connexion
- - OK----> Création d'une vue avec un formulaire
- - OK----> Validation des champs avec vérifications des identifiants
- - OK------------> Pensez à utiliser password verify
- - OK----> Redirection sur la page d'accueil et afficher dessus le prénom si l'user est connecté
+4. Accès au local
+```
+http://localhost
+```
 
-- -- Déconnexion
- - ----> Ajouter un lien de déconnexion
+5. Importer dans phpmyadmin, le fichier "esgi.sql"
 
-- OK-->L'utilisation des models est facultatifs
+## Compte test
+```
+email : test@gmail.com
+psswd : Testtest1
+```
 
-- -->page title dynamique
+## Features
+
+### Conception
+- [x] Création d'une table SQL user
+
+### Inscription
+- [x] Création d'une vue avec un formulaire
+- [x] Validation des champs du formulaire avec affichage des erreurs si nécessaire
+  - email, pwd, pwdConfirm, firstname, lastname, country
+  - Vérification de l'unicité de l'email
+  - Utilisation de password hash
+- [x] Insertion en BDD de l'utilisateur
+- [x] Redirection sur la page de login
+
+### Connexion
+- [x] Création d'une vue avec un formulaire
+- [x] Validation des champs avec vérifications des identifiants
+  - Utilisation de password verify
+- [x] Redirection sur la page d'accueil et afficher dessus le prénom si l'user est connecté
+
+### Déconnexion
+- [ ] Ajouter un lien de déconnexion
+
+### Notes
+- [x] L'utilisation des models est facultative
+- [x] Page title dynamique
