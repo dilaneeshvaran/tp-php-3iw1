@@ -24,7 +24,7 @@ if (count($_POST) == 2 && !empty($_POST["email"]) && !empty($_POST["password"]))
       header('Location: /main');
    }
 }
-echo "register ok!";
+//echo "register ok!";
 ?>
 
 <h1><?php $title ?></h1>

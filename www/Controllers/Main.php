@@ -20,15 +20,10 @@ class Main
     {
         $sql = new SQL();
         $page = $sql->getOneById("page",3);
-        $view = new View("User/hello.php", "front.php");
-        $view->addData("title", $page["title"]);
-        $view->addData("description", $page["description"]);
-        //echo $view;
-
-        $page = $sql->getOneById("page", 3);
         $view = new View("User/main.php", "front.php");
         $view->addData("title", $page["title"]);
         $view->addData("description", $page["description"]);
+        //echo $view;
     }
 
     public function getPseudo(): string

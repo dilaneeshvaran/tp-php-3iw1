@@ -22,7 +22,10 @@ docker compose up -d
 http://localhost
 ```
 
-5. Importer dans phpmyadmin, le fichier "esgi.sql"
+5. Importer la base de donnée
+```
+Importer dans phpmyadmin, le fichier "esgi.sql" qui se trouve dans le dossier "sql-db-to-import".
+```
 
 ## Compte test
 ```
@@ -51,7 +54,7 @@ psswd : Testtest1
 - [x] Redirection sur la page d'accueil et afficher dessus le prénom si l'user est connecté
 
 ### Déconnexion
-- [ ] Ajouter un lien de déconnexion
+- [x] Ajouter un lien de déconnexion
 
 ### Notes
 - [x] L'utilisation des models est facultative
