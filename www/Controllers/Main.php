@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Core\View;
+use App\Core\SQL;
 class Main
 {
     private $_pseudo;
@@ -14,7 +15,11 @@ class Main
     }
     public function home(): void
     {
+        $sql = new SQL();
+        $page = $sql->getOneById("page",3);
         $view = new View("User/hello.php", "front.php");
+        $view->addData("title", $page["title"]);
+        $view->addData("description", $page["description"]);
         //echo $view;
     }
     public function getPseudo(): string
